@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="icon" type="image/x-icon" href="/img/tic-tac-toe.png">
+    <script src="https://unpkg.com/canvas-confetti@1.5.1/dist/confetti.browser.js"></script>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li>Tic tac toe.com</li>
+        </ul>
+    </nav>
+    <div class="game-container">
+        <div class="game-main-container">
+            <div class="gameOver">
+                <div class="winner"></div>
+                <div class="content"></div>
+            </div>
+            <div class="box-container">
+                <div class="line"></div>
+                <div class="box bl-0 bt-0"><span class="box-text"></span></div>
+                <div class="box bt-0"><span class="box-text"></span></div>
+                <div class="box br-0 bt-0"><span class="box-text"></span></div>
+                <div class="box bl-0"><span class="box-text"></span></div>
+                <div class="box"><span class="box-text"></span></div>
+                <div class="box br-0"><span class="box-text"></span></div>
+                <div class="box bl-0 bb-0"><span class="box-text"></span></div>
+                <div class="box bb-0"><span class="box-text"></span></div>
+                <div class="box br-0 bb-0"><span class="box-text"></span></div>
+            </div>
+        </div>
+        <div class="game-info">
+            <div>
+                <h1>Welcome to Tic tac toe! Have fun</h1>
+                <span class="info" id="info">Turn for X</span>
+                <button id="reset">Reset</button>
+            </div>
+            <div class="imgBox">
+                <img src="/img/excited.gif" alt="celebration-img"/>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="confetti.js"></script>
+</body>
+</html>
